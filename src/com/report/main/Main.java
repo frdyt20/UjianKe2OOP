@@ -8,7 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Staff staffInput = new Staff(Nama, ID, Income);
+		Staff staffInput = new Staff();
 		Income incomeInput = new Income(IncomeType);
 		
 		

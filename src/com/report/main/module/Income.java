@@ -18,6 +18,11 @@ public class Income {
 		
 	}
 	
+	/**
+	 * Fungsi untuk mendapatkan jenis penghasilan
+	 * 
+	 * @return String
+	 */
 	public String getIncomeType() {
 		Scanner input3 = new Scanner(System.in);
 		System.out.println("Silahkan input jenis penghasilan karyawan : ");
@@ -25,6 +30,11 @@ public class Income {
 		return incomeType;
 	}
 	
+	/**
+	 * Fungsi untuk mendapatkan jumlah penghasilan kotor
+	 * 
+	 * @return double
+	 */
 	public double getAmount() {
 		Scanner input4 = new Scanner(System.in);
 		System.out.println("Silahkan input jumlah penghasilan karyawan : ");
@@ -32,6 +42,11 @@ public class Income {
 		return amount;
 	}
 	
+	/**
+	 * Fungsi untuk mendapatkan persentase pajak penghasilan
+	 * 
+	 * @return double
+	 */
 	public double getTax() {
 		if(amount <= 4170000) {
 			tax = 5.0;
@@ -41,6 +56,11 @@ public class Income {
 		return tax;
 	}
 	
+	/**
+	 * Fungsi untuk mendapatkan jumlah penghasilan kena pajak
+	 * 
+	 * @return double
+	 */
 	public double getTotalTax() {
 		totalTax = (tax/100) * amount;
 		return totalTax;

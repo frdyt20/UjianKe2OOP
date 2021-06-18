@@ -6,7 +6,7 @@ public class Staff {
 	
 	String name;
 	String id;
-	Income income = new Income();
+	Income income = new Income(name, 0, 0, 0);
 	
 	public Staff(String name, String id, Income income) {
 		
